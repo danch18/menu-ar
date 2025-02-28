@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu en Réalité Augmentée</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        model-viewer {
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualisez votre plat en 3D</h1>
+    <model-viewer 
+        src="https://drive.google.com/uc?export=view&id=1yVo93kzd2ke_DEqCRyjEnEddldoB8Hc8" 
+        ar 
+        ar-modes="scene-viewer webxr quick-look" 
+        camera-controls 
+        auto-rotate>
+    </model-viewer>
+    <p>Scannez le QR Code pour voir ce plat en AR.</p>
+</body>
+</html>
